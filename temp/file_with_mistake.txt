@@ -1,0 +1,58 @@
+Processing: NYSE_ATH_2021
+❌ 發生錯誤於第 46-48 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_ATH_2021
+
+Processing: NYSE_SNE_2019
+❌ 發生錯誤於第 6-10 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+❌ 發生錯誤於第 206-210 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_SNE_2019
+
+Processing: NYSE_UPS_2017
+❌ 發生錯誤於第 36-40 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+❌ 發生錯誤於第 66-70 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_UPS_2017
+
+Processing: NYSE_VLO_2021
+❌ 發生錯誤於第 16-20 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+❌ 發生錯誤於第 56-59 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_VLO_2021
+
+Processing: NYSE_ASX_2019
+❌ 發生錯誤於第 46-50 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+❌ 發生錯誤於第 76-80 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+❌ 發生錯誤於第 81-85 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+❌ 發生錯誤於第 96-100 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+❌ 發生錯誤於第 141-145 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_ASX_2019
+
+Processing: NYSE_MS_2014
+❌ 發生錯誤於第 86-90 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_MS_2014
+
+Processing: NYSE_LOW_2010
+❌ 發生錯誤於第 51-55 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_LOW_2010
+
+Processing: NYSE_GM_2020
+❌ 發生錯誤於第 71-75 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_GM_2020
+
+Processing: NYSE_YUMC_2021
+❌ 發生錯誤於第 1-5 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_YUMC_2021
+
+Processing: NYSE_TI_2018
+❌ 發生錯誤於第 166-170 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_TI_2018
+
+Processing: NYSE_GPS_2016
+❌ 發生錯誤於第 11-15 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_GPS_2016
+
+Processing: NYSE_BSX_2020
+❌ 發生錯誤於第 36-40 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_BSX_2020
+
+Processing: NYSE_VTR_2021
+❌ 發生錯誤於第 71-75 頁：Invalid operation: The `response.text` quick accessor requires the response to contain a valid `Part`, but none were returned. The candidate's [finish_reason](https://ai.google.dev/api/generate-content#finishreason) is 4. Meaning that the model was reciting from copyrighted material.
+Processed: NYSE_VTR_2021

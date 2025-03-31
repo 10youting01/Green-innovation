@@ -1,0 +1,35 @@
+# 忽略 CSR Reporting 資料夾
+CSR\ Reporting/
+CSR_report_processed_re_v2
+CSR_report_processed_re_v4
+CSR_report_processed_re_v5
+CSR_report_processed_v3
+CSR_report_processed_v4
+CSR_report_processed_v4_gemini_v0
+CapitalIQ_Transcript_WRDS_Data
+
+CSR_score/
+preprocess/subwordbert-probwordnoise
+neuspell
+test_output
+output_dataset
+gemini_preprocess.ipynb
+csr_embeddings.csv
+
+# 忽略 Jupyter Notebook 的暫存檔
+*.ipynb_checkpoints/
+
+# 忽略 Python 的虛擬環境
+venv/
+.env
+
+# 忽略 macOS 的系統檔
+.DS_Store
+
+# 忽略 VSCode 設定檔
+.vscode/
+
+# 忽略 __pycache__ 目錄
+__pycache__/
+*.pyc
+output_dataset/csr_embeddings.csv
