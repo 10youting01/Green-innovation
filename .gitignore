@@ -15,6 +15,7 @@ test_output
 output_dataset
 gemini_preprocess.ipynb
 csr_embeddings.csv
+preprocess_test_language_tool.ipynb
 
 # 忽略 Jupyter Notebook 的暫存檔
 *.ipynb_checkpoints/
