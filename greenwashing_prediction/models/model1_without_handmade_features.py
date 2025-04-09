@@ -4,7 +4,7 @@ import pandas as pd
 from sklearn.model_selection import TimeSeriesSplit
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from utils import get_X_y_from_dataset_without_handmade_features, train_one_fold, evaluate_model, predict, save_model, save_predictions, save_metrics_log
+from utils import get_X_y_from_dataset_without_handmade_features, train_one_fold, evaluate_model, predict, save_model, save_predictions, save_metrics_log, record_train_test_samples
 from models.mlp import build_mlp_model
 
 ## Define version
@@ -40,23 +40,27 @@ for fold, (train_index, test_index) in enumerate(tscv.split(X)):
     ## Build the model
     model = build_mlp_model("mlp1")   
     ## Train the model
-    model = train_one_fold(model, X_train, y_train, X_test, y_test, lr=0.005, max_epochs=500, early_stop_rounds=10)
+    model, metrics = train_one_fold(model, X_train, y_train, X_test, y_test, lr=0.005, max_epochs=500, early_stop_rounds=10)
     
     ## Predict the model
     y_pred = predict(model, X_test)
     
     ## Evaluate the model
-    metrics = evaluate_model(y_test, y_pred)
-    print(f"Fold {fold+1} Metrics: {metrics}")
+    fold_metrics = evaluate_model(y_test, y_pred)
+    metrics.update(fold_metrics)  # Update the metrics with the evaluation results
+
+    # Record training and testing sample sizes
+    metrics = record_train_test_samples(metrics, X_train, X_test)
     print(f"Training samples: {len(X_train)}, Test samples: {len(X_test)}")
+    print(f"Fold {fold+1} Metrics: {metrics}")
     metrics["fold"] = fold + 1
     metrics_all_folds.append(metrics)
 
-    ## Save model for this version
+    # Save model for this version
     model_path = os.path.join(model_folder, f"fold{fold+1}_model_{version}.pkl")
     save_model(model, model_path)
 
-    ## Save predictions for this version
+    # Save predictions for this version
     predictions_path = os.path.join(result_folder, f"fold{fold+1}_predictions_{version}.csv")
     save_predictions(y_test, y_pred, predictions_path)
 
