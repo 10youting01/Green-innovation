@@ -19,13 +19,20 @@ csr_embeddings_hm_score.sort_values(
     inplace=True,
 )
 X_bert, X_hand, y = get_X_y_from_dataset_with_handmade_features(csr_embeddings_hm_score)
-## Check the shape of the data
-# print(f"X shape: {X.shape}")
-# print(f"y shape: {y.shape}")
+
+## Define version
+version = "v0"  # Adjust this for each new version of the model
+
+# Create directories for the current version
+model_folder = f"../models/model2/model2_{version}"
+result_folder = f"../results/model2_{version}"
+os.makedirs(model_folder, exist_ok=True)
+os.makedirs(result_folder, exist_ok=True)
 
 ## Time Series K-Fold
 tscv = TimeSeriesSplit(n_splits=5)
 metrics_all_folds = []
+
 for fold, (train_index, test_index) in enumerate(tscv.split(X_bert)):
     Xb_train, Xb_test = X_bert[train_index], X_bert[test_index]
     Xh_train, Xh_test = X_hand[train_index], X_hand[test_index]
@@ -40,28 +47,22 @@ for fold, (train_index, test_index) in enumerate(tscv.split(X_bert)):
     y_pred = predict_with_hm(model, Xb_test, Xh_test)
     ## Evaluate the model
     metrics = evaluate_model(y_test, y_pred)
+    print(f"Training samples: {len(Xb_train)}, Test samples: {len(Xb_test)}")
+    # print(f"Handmade features - Training samples: {len(Xh_train)}, Test samples: {len(Xh_test)}")
+    # The number of samples in the handmade features is the same as in the BERT features
+
     print(f"Fold {fold+1} Metrics: {metrics}")
     metrics["fold"] = fold + 1
     metrics_all_folds.append(metrics)
-    ## Save the model
-    metrics = evaluate_model(y_test, y_pred)
-    metrics["fold"] = fold + 1
-    metrics_all_folds.append(metrics)
+    print(f"Training samples: {len(Xb_train)}, Test samples: {len(Xb_test)}")
 
-#     # 儲存
-#     save_model(model, f"../models/DNN_model2_with_handmade/fold{fold+1}_model.pt")
-#     save_predictions(y_test, y_pred, f"../results/DNN_model2_with_handmade/fold{fold+1}_predictions.csv")
+    ## Save model for this version
+    model_path = os.path.join(model_folder, f"fold{fold+1}_model_{version}.pkl")
+    save_model(model, model_path)
 
-# # 儲存所有 fold 的結果
-# save_metrics_log(metrics_all_folds, "../results/DNN_model2_with_handmade/metrics_log.json")
+    ## Save predictions for this version
+    predictions_path = os.path.join(result_folder, f"fold{fold+1}_predictions_{version}.csv")
+    save_predictions(y_test, y_pred, predictions_path)
 
-# Early stopping at epoch 29
-# Fold 1 Metrics: {'MSE': 115.37635110883261, 'RMSE': 10.741338422600444, 'MAE': 8.687929257539649, 'MAPE': 1.4719267942177092}
-# Early stopping at epoch 14
-# Fold 2 Metrics: {'MSE': 362.689008612925, 'RMSE': 19.044395727166695, 'MAE': 13.230844565772047, 'MAPE': 3.467415263118048}
-# Early stopping at epoch 30
-# Fold 3 Metrics: {'MSE': 108.56603245361033, 'RMSE': 10.419502505091609, 'MAE': 7.651665720015634, 'MAPE': 55.78205597335014}
-# Early stopping at epoch 22
-# Fold 4 Metrics: {'MSE': 218.2030878153413, 'RMSE': 14.77169888047212, 'MAE': 11.213510902189988, 'MAPE': 2.030771857413181}
-# Early stopping at epoch 14
-# Fold 5 Metrics: {'MSE': 399.02509285374714, 'RMSE': 19.97561245253189, 'MAE': 16.262410826806267, 'MAPE': 5.559103025472601}
+# Save metrics log (after all folds) for this version
+save_metrics_log(metrics_all_folds, f"../results/model1_{version}/metrics_log_{version}.json")
