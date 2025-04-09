@@ -36,12 +36,22 @@ models = {
 
 # 儲存每個模型每折的評估結果
 metrics_summary = {name: {'MAE': [], 'MSE': [], 'MAPE': [], 'RMSE': []} for name in models}
+fold_sizes = []  # 新增的變數，用來儲存每折的訓練集和測試集大小
 
 # 執行每折
 for fold, (train_idx, test_idx) in enumerate(tscv.split(X)):
     print(f"\n Fold {fold + 1}")
+    
+    # 訓練集與測試集
     X_train, X_test = X[train_idx], X[test_idx]
     y_train, y_test = y[train_idx], y[test_idx]
+
+    # 記錄訓練集與測試集的大小
+    train_size = len(train_idx)
+    test_size = len(test_idx)
+    fold_sizes.append((train_size, test_size))  # 儲存每折的訓練集與測試集大小
+    
+    print(f"Train size: {train_size}, Test size: {test_size}")
 
     # 標準化（僅對 SVR 使用）
     scaler = StandardScaler()
@@ -72,8 +82,14 @@ for name, scores in metrics_summary.items():
     print(f"  MAPE : {np.mean(scores['MAPE']):.4f}")
     print(f"  RMSE : {np.mean(scores['RMSE']):.4f}")
 
+# 輸出每個fold的訓練集與測試集大小
+print("\n Fold-wise Train and Test Sizes:")
+for fold_num, (train_size, test_size) in enumerate(fold_sizes, 1):
+    print(f"  Fold {fold_num}: Train size = {train_size}, Test size = {test_size}")
+
 
 #  Fold 1
+# Train size: 29, Test size: 27
 # LR => MAE: 90.97, RMSE: 172.20, MAPE: 11.40
 # SVR => MAE: 8.02, RMSE: 10.46, MAPE: 1.48
 # DT => MAE: 10.39, RMSE: 13.05, MAPE: 1.66
@@ -81,6 +97,7 @@ for name, scores in metrics_summary.items():
 # XGB => MAE: 9.60, RMSE: 12.15, MAPE: 1.56
 
 #  Fold 2
+# Train size: 56, Test size: 27
 # LR => MAE: 13.15, RMSE: 17.25, MAPE: 4.91
 # SVR => MAE: 11.54, RMSE: 14.10, MAPE: 4.34
 # DT => MAE: 12.65, RMSE: 16.03, MAPE: 4.73
@@ -88,6 +105,7 @@ for name, scores in metrics_summary.items():
 # XGB => MAE: 11.34, RMSE: 14.60, MAPE: 4.15
 
 #  Fold 3
+# Train size: 83, Test size: 27
 # LR => MAE: 9.83, RMSE: 12.82, MAPE: 10.11
 # SVR => MAE: 9.62, RMSE: 12.17, MAPE: 50.41
 # DT => MAE: 11.38, RMSE: 15.53, MAPE: 7.00
@@ -95,6 +113,7 @@ for name, scores in metrics_summary.items():
 # XGB => MAE: 10.63, RMSE: 13.15, MAPE: 22.75
 
 #  Fold 4
+# Train size: 110, Test size: 27
 # LR => MAE: 9.86, RMSE: 11.69, MAPE: 3.05
 # SVR => MAE: 7.58, RMSE: 9.68, MAPE: 2.32
 # DT => MAE: 11.91, RMSE: 14.59, MAPE: 2.00
@@ -102,6 +121,7 @@ for name, scores in metrics_summary.items():
 # XGB => MAE: 9.56, RMSE: 10.91, MAPE: 2.21
 
 #  Fold 5
+# Train size: 137, Test size: 27
 # LR => MAE: 8.39, RMSE: 10.52, MAPE: 1.32
 # SVR => MAE: 5.80, RMSE: 7.75, MAPE: 0.93
 # DT => MAE: 11.26, RMSE: 14.10, MAPE: 1.61
@@ -139,3 +159,10 @@ for name, scores in metrics_summary.items():
 #   MSE  : 147.6857
 #   MAPE : 6.3485
 #   RMSE : 12.0130
+
+#  Fold-wise Train and Test Sizes:
+#   Fold 1: Train size = 29, Test size = 27
+#   Fold 2: Train size = 56, Test size = 27
+#   Fold 3: Train size = 83, Test size = 27
+#   Fold 4: Train size = 110, Test size = 27
+#   Fold 5: Train size = 137, Test size = 27
