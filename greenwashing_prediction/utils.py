@@ -59,7 +59,11 @@ def train_one_fold(model, X_train, y_train, X_val, y_val,
             break
 
     model.load_state_dict(best_model_state)
-    return model
+
+    # Record training and testing sample sizes
+    metrics = {}
+    metrics = record_train_test_samples(metrics, X_train, X_val)
+    return model, metrics
 
 def train_one_fold_with_hm(model, X_bert_train, X_hand_train, y_train, 
                    X_bert_val, X_hand_val, y_val,
@@ -108,7 +112,11 @@ def train_one_fold_with_hm(model, X_bert_train, X_hand_train, y_train,
             break
 
     model.load_state_dict(best_model_state)
-    return model
+
+    # Record training and testing sample sizes
+    metrics = {}
+    metrics = record_train_test_samples(metrics, Xb_train, Xb_val, Xh_train, Xh_val)
+    return model, metrics
 
 
 def evaluate_model(y_true, y_pred): 
@@ -166,3 +174,29 @@ def predict_with_hm(model, X_bert, X_hand):
         y_pred = model(Xb, Xh).cpu().numpy().flatten()
 
     return y_pred
+
+def record_train_test_samples(metrics, X_train, X_test, X_hand_train=None, X_hand_test=None):
+    """
+    Record the number of training and test samples for both BERT and handmade features.
+
+    Args:
+    - metrics (dict): Dictionary to store metrics information.
+    - X_train (array): Training data for BERT features.
+    - X_test (array): Test data for BERT features.
+    - X_hand_train (array, optional): Training data for handmade features.
+    - X_hand_test (array, optional): Test data for handmade features.
+
+    Returns:
+    - metrics (dict): Updated dictionary with training and test sample counts.
+    """
+
+    # Record BERT features (X_train, X_test)
+    metrics["train_samples"] = len(X_train)  # Training samples count (BERT features)
+    metrics["test_samples"] = len(X_test)   # Test samples count (BERT features)
+
+    # If handmade features exist, record their samples too
+    if X_hand_train is not None and X_hand_test is not None:
+        metrics["handmade_train_samples"] = len(X_hand_train)  # Handmade features training count
+        metrics["handmade_test_samples"] = len(X_hand_test)    # Handmade features testing count
+
+    return metrics
