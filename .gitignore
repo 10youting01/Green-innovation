@@ -8,6 +8,8 @@ CSR_report_processed_v4
 CSR_report_processed_v4_gemini_v0
 CapitalIQ_Transcript_WRDS_Data
 greenwashing_prediction/data
+Green_patent_dataset
+greenwashing_prediction/results
 
 CSR_score/
 preprocess/subwordbert-probwordnoise
