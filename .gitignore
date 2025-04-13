@@ -10,6 +10,7 @@ CapitalIQ_Transcript_WRDS_Data
 greenwashing_prediction/data
 Green_patent_dataset
 greenwashing_prediction/results
+compustat
 
 CSR_score/
 preprocess/subwordbert-probwordnoise
