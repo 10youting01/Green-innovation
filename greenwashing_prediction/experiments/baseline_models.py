@@ -71,16 +71,16 @@ for fold, (train_idx, test_idx) in enumerate(tscv.split(X)):
         for metric_name in metrics:
             metrics_summary[name][metric_name].append(metrics[metric_name])
 
-        print(f"{name} => MAE: {metrics['MAE']:.2f}, RMSE: {metrics['RMSE']:.2f}, MAPE: {metrics['MAPE']:.2f}")
+        print(f"MSE: {metrics['MSE']: .2f}, RMSE: {metrics['RMSE']:.2f}, {name} => MAE: {metrics['MAE']:.2f}, MAPE: {metrics['MAPE']:.2f}")
 
 # 輸出平均表現
 print("\n Baseline Model Performance Summary (5-Fold CV):")
 for name, scores in metrics_summary.items():
     print(f"\n{name}:")
-    print(f"  MAE  : {np.mean(scores['MAE']):.4f}")
     print(f"  MSE  : {np.mean(scores['MSE']):.4f}")
-    print(f"  MAPE : {np.mean(scores['MAPE']):.4f}")
     print(f"  RMSE : {np.mean(scores['RMSE']):.4f}")
+    print(f"  MAE  : {np.mean(scores['MAE']):.4f}")
+    print(f"  MAPE : {np.mean(scores['MAPE']):.4f}")
 
 # 輸出每個fold的訓練集與測試集大小
 print("\n Fold-wise Train and Test Sizes:")
@@ -90,75 +90,75 @@ for fold_num, (train_size, test_size) in enumerate(fold_sizes, 1):
 
 #  Fold 1
 # Train size: 29, Test size: 27
-# LR => MAE: 90.97, RMSE: 172.20, MAPE: 11.40
-# SVR => MAE: 8.02, RMSE: 10.46, MAPE: 1.48
-# DT => MAE: 10.39, RMSE: 13.05, MAPE: 1.66
-# RF => MAE: 9.11, RMSE: 11.46, MAPE: 1.54
-# XGB => MAE: 9.60, RMSE: 12.15, MAPE: 1.56
+# MSE:  29652.59, RMSE: 172.20, LR => MAE: 90.97, MAPE: 11.40
+# MSE:  109.38, RMSE: 10.46, SVR => MAE: 8.02, MAPE: 1.48
+# MSE:  170.37, RMSE: 13.05, DT => MAE: 10.39, MAPE: 1.66
+# MSE:  131.33, RMSE: 11.46, RF => MAE: 9.11, MAPE: 1.54
+# MSE:  147.66, RMSE: 12.15, XGB => MAE: 9.60, MAPE: 1.56
 
 #  Fold 2
 # Train size: 56, Test size: 27
-# LR => MAE: 13.15, RMSE: 17.25, MAPE: 4.91
-# SVR => MAE: 11.54, RMSE: 14.10, MAPE: 4.34
-# DT => MAE: 12.65, RMSE: 16.03, MAPE: 4.73
-# RF => MAE: 11.44, RMSE: 14.28, MAPE: 4.21
-# XGB => MAE: 11.34, RMSE: 14.60, MAPE: 4.15
+# MSE:  297.64, RMSE: 17.25, LR => MAE: 13.15, MAPE: 4.91
+# MSE:  198.75, RMSE: 14.10, SVR => MAE: 11.54, MAPE: 4.34
+# MSE:  256.86, RMSE: 16.03, DT => MAE: 12.65, MAPE: 4.73
+# MSE:  203.95, RMSE: 14.28, RF => MAE: 11.44, MAPE: 4.21
+# MSE:  213.19, RMSE: 14.60, XGB => MAE: 11.34, MAPE: 4.15
 
 #  Fold 3
 # Train size: 83, Test size: 27
-# LR => MAE: 9.83, RMSE: 12.82, MAPE: 10.11
-# SVR => MAE: 9.62, RMSE: 12.17, MAPE: 50.41
-# DT => MAE: 11.38, RMSE: 15.53, MAPE: 7.00
-# RF => MAE: 9.40, RMSE: 11.63, MAPE: 48.27
-# XGB => MAE: 10.63, RMSE: 13.15, MAPE: 22.75
+# MSE:  164.40, RMSE: 12.82, LR => MAE: 9.83, MAPE: 10.11
+# MSE:  148.16, RMSE: 12.17, SVR => MAE: 9.62, MAPE: 50.41
+# MSE:  241.13, RMSE: 15.53, DT => MAE: 11.38, MAPE: 7.00
+# MSE:  135.17, RMSE: 11.63, RF => MAE: 9.40, MAPE: 48.27
+# MSE:  172.99, RMSE: 13.15, XGB => MAE: 10.63, MAPE: 22.75
 
 #  Fold 4
 # Train size: 110, Test size: 27
-# LR => MAE: 9.86, RMSE: 11.69, MAPE: 3.05
-# SVR => MAE: 7.58, RMSE: 9.68, MAPE: 2.32
-# DT => MAE: 11.91, RMSE: 14.59, MAPE: 2.00
-# RF => MAE: 8.07, RMSE: 9.52, MAPE: 2.55
-# XGB => MAE: 9.56, RMSE: 10.91, MAPE: 2.21
+# MSE:  136.63, RMSE: 11.69, LR => MAE: 9.86, MAPE: 3.05
+# MSE:  93.75, RMSE: 9.68, SVR => MAE: 7.58, MAPE: 2.32
+# MSE:  212.74, RMSE: 14.59, DT => MAE: 11.91, MAPE: 2.00
+# MSE:  90.70, RMSE: 9.52, RF => MAE: 8.07, MAPE: 2.55
+# MSE:  119.01, RMSE: 10.91, XGB => MAE: 9.56, MAPE: 2.21
 
 #  Fold 5
 # Train size: 137, Test size: 27
-# LR => MAE: 8.39, RMSE: 10.52, MAPE: 1.32
-# SVR => MAE: 5.80, RMSE: 7.75, MAPE: 0.93
-# DT => MAE: 11.26, RMSE: 14.10, MAPE: 1.61
-# RF => MAE: 6.67, RMSE: 8.74, MAPE: 1.15
-# XGB => MAE: 7.56, RMSE: 9.25, MAPE: 1.07
+# MSE:  110.60, RMSE: 10.52, LR => MAE: 8.39, MAPE: 1.32
+# MSE:  60.11, RMSE: 7.75, SVR => MAE: 5.80, MAPE: 0.93
+# MSE:  198.81, RMSE: 14.10, DT => MAE: 11.26, MAPE: 1.61
+# MSE:  76.40, RMSE: 8.74, RF => MAE: 6.67, MAPE: 1.15
+# MSE:  85.57, RMSE: 9.25, XGB => MAE: 7.56, MAPE: 1.07
 
 #  Baseline Model Performance Summary (5-Fold CV):
 
 # LR:
-#   MAE  : 26.4408
 #   MSE  : 6072.3719
-#   MAPE : 6.1582
 #   RMSE : 44.8958
+#   MAE  : 26.4408
+#   MAPE : 6.1582
 
 # SVR:
-#   MAE  : 8.5111
 #   MSE  : 122.0304
-#   MAPE : 11.8955
 #   RMSE : 10.8328
+#   MAE  : 8.5111
+#   MAPE : 11.8955
 
 # DT:
-#   MAE  : 11.5205
 #   MSE  : 215.9816
-#   MAPE : 3.3991
 #   RMSE : 14.6587
+#   MAE  : 11.5205
+#   MAPE : 3.3991
 
 # RF:
-#   MAE  : 8.9380
 #   MSE  : 127.5099
-#   MAPE : 11.5434
 #   RMSE : 11.1263
+#   MAE  : 8.9380
+#   MAPE : 11.5434
 
 # XGB:
-#   MAE  : 9.7388
 #   MSE  : 147.6857
-#   MAPE : 6.3485
 #   RMSE : 12.0130
+#   MAE  : 9.7388
+#   MAPE : 6.3485
 
 #  Fold-wise Train and Test Sizes:
 #   Fold 1: Train size = 29, Test size = 27

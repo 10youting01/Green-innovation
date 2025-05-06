@@ -1,0 +1,312 @@
+ticker,company_name,exchange
+AAPL,Apple Inc.,NASDAQ
+ABBV,Abbvie Inc,NYSE
+ABT,Abbott Laboratories,NYSE
+ACCO,ACCO Brands,NYSE
+ACLS,Axcelis Technologies Inc.,NASDAQ
+ACN,Accenture plc,NYSE
+ADBE,Adobe Systems Inc.,NASDAQ
+ADCT,ADC Therapeutics SA,NYSE
+ADI,Analog Devices Inc.,NASDAQ
+ADM,Archer Daniels Midland Company,NYSE
+ADSK,"Autodesk, Inc.",NASDAQ
+ADTN,ADTRAN Inc.,NASDAQ
+AES,The AES Corporation,NYSE
+AGCO,AGCO Corporation,NYSE
+AGIO,Agios Pharmaceuticals,NASDAQ
+AGN,Allergan plc,NYSE
+ALB,Albemarle Corporation,NYSE
+ALSN,Allison Transmission,NYSE
+ALTR,Altair Engineering Inc.,NASDAQ
+AMAT,Applied Materials Inc.,NASDAQ
+AMD,"Advanced Micro Devices, Inc.",NASDAQ
+AMGN,Amgen Inc.,NASDAQ
+AMKR,Amkor Technology Inc.,NASDAQ
+AMRS,Amyris,NASDAQ
+AMZN,Amazon.com Inc.,NASDAQ
+ANDE,"The Andersons, Inc.",NASDAQ
+ANET,Arista Networks Inc,NYSE
+AOS,AO Smith Corporation,NYSE
+APD,Air Products & Chemicals Inc.,NYSE
+AQUA,Evoqua Water Technologies,NYSE
+ARRY,"Array Technologies, Inc.",NASDAQ
+ASPN,Aspen Aerogels ,NYSE
+ASTE,Astec Industries Inc.,NASDAQ
+AVA,Avista Corp.,NYSE
+AVAV,"AeroVironment, Inc.",NASDAQ
+AVGO,Broadcom Inc.,NASDAQ
+AVY,Avery Dennison Corporation,NYSE
+AWK,American Water Works Company Inc.,NYSE
+AXL,American Axle & Manufacturing Holdings Inc.,NYSE
+AXON,"Axon Enterprise, Inc.",NASDAQ
+AYI,"Acuity Brands, Inc.",NYSE
+AZPN,"Aspen Technology, Inc.",NASDAQ
+AZTA,"Azenta, Inc.",NASDAQ
+B,Barnes Group Inc.,NYSE
+BA,Boeing Company,NYSE
+BAX,Baxter International Inc.,NYSE
+BC,Brunswick Corporation,NYSE
+BDX,"Becton, Dickinson and Company",NYSE
+BE,Bloom Energy,NYSE
+BIIB,Biogen Idec,NASDAQ
+BKR,Baker Hughes Inc.,NYSE
+BMI,Badger Meter Inc.,NYSE
+BMY,Bristol Myers Squibb Co.,NYSE
+BSX,Boston Scientific Corporation,NYSE
+BW,Babcock & Wilcox,NYSE
+BWA,BorgWarner,NYSE
+BWXT,BWX Technologies Inc,NYSE
+CAT,Caterpillar Inc.,NYSE
+CBT,Cabot Corporation,NYSE
+CDNS,"Cadence Design Systems, Inc.",NASDAQ
+CERN,Cerner Corporation,NASDAQ
+CGNX,Cognex Corporation,NASDAQ
+CHD,Church & Dwight Co. Inc.,NYSE
+CIEN,Ciena Corporation,NYSE
+CL,Colgate-Palmolive Co.,NYSE
+CLNE,Clean Energy Fuels Corp.,NASDAQ
+CLX,The Clorox Company,NYSE
+CMC,Commercial Metals Co.,NYSE
+COP,ConocoPhillips,NYSE
+CRM,"Salesforce.com, Inc.",NYSE
+CRUS,Cirrus Logic Inc.,NASDAQ
+CSCO,Cisco Systems Inc.,NASDAQ
+CTS,CTS Corporation,NYSE
+CTXS,Citrix Systems Inc.,NASDAQ
+CUB,Cubic Corp.,NYSE
+CVLT,"CommVault Systems, Inc.",NASDAQ
+CWST,Casella Waste Systems Inc.,NASDAQ
+D,"Dominion Energy, Inc.",NYSE
+D,"Dominion Resources, Inc.",NYSE
+DAN,Dana Incorporated,NYSE
+DBD,"Diebold Nixdorf, Incorporated",NYSE
+DCI,Donaldson Company Inc.,NYSE
+DD,DuPont,NYSE
+DE,Deere & Co.,NYSE
+DGX,Quest Diagnostics Inc.,NYSE
+DMRC,Digimarc Corporation,NASDAQ
+DOLE,Dole plc,NYSE
+DOW,The Dow Chemical Company,NYSE
+DTE,DTE Energy Co.,NYSE
+DXCM,"DexCom, Inc.",NASDAQ
+EBAY,eBay,NASDAQ
+EGIO,"Edgio, Inc.",NASDAQ
+ELY,Callaway Golf Co.,NYSE
+EMN,Eastman Chemical Company,NYSE
+ENPH,Enphase Energy Inc,NASDAQ
+ENTG,Entegris,NASDAQ
+ERII,Energy Recovery,NASDAQ
+EXEL,"Exelixis, Inc.",NASDAQ
+EXTR,"Extreme Networks, Inc",NASDAQ
+F,Ford Motor Company,NYSE
+FARO,FARO Technologies Inc.,NASDAQ
+FCEL,"FuelCell Energy, Inc.",NASDAQ
+FELE,Franklin Electric Co. Inc.,NASDAQ
+FFIV,F5 Networks Inc.,NASDAQ
+FLIR,FLIR Systems Inc.,NASDAQ
+FLOW,"SPX FLOW, Inc.",NYSE
+FMC,FMC Corporation,NYSE
+FSLR,First Solar Inc.,NASDAQ
+FSS,Federal Signal Corp.,NYSE
+FTNT,Fortinet Inc.,NASDAQ
+GE,General Electric,NYSE
+GEVO,"Gevo, Inc.",NASDAQ
+GGG,Graco Inc.,NYSE
+GILD,Gilead Sciences,NASDAQ
+GIS,"General Mills, Inc.",NYSE
+GLT,PH Glatfelter Co.,NYSE
+GLW,Corning Inc,NYSE
+GM,General Motors,NYSE
+GNRC,Generac Holdings Inc.,NYSE
+GNTX,Gentex Corporation,NASDAQ
+GPRO,"GoPro, Inc.",NASDAQ
+GRMN,Garmin Ltd.,NASDAQ
+GT,Goodyear Tire & Rubber Co.,NYSE
+GTI,GrafTech International Ltd.,NYSE
+HAL,Halliburton Company,NYSE
+HALO,"Halozyme Therapeutics, Inc.",NASDAQ
+HELE,Helen of Troy Limited,NASDAQ
+HIG,Hartford Financial Services Group Inc.,NYSE
+HON,Honeywell International Inc.,NYSE
+HRC,"Hill-Rom Holdings, Inc.",NYSE
+HUBB,Hubbell Inc.,NYSE
+HXL,Hexcel Corp.,NYSE
+IBM,International Business Machines Corp.,NYSE
+ICE,"InterContinental Exchange, Inc.",NYSE
+IDCC,InterDigital Communications,NASDAQ
+IDXX,"IDEXX Laboratories, Inc.",NASDAQ
+ILMN,Illumina Inc.,NASDAQ
+INFN,Infinera Corp.,NASDAQ
+INGN,Inogen Inc,NASDAQ
+INSM,Insmed Incorporated,NASDAQ
+INTC,Intel Corporation,NASDAQ
+IONS,Ionis Pharmaceuticals Inc.,NASDAQ
+IP,International Paper Co,NYSE
+IPGP,IPG Photonics Corporation,NASDAQ
+IRBT,iRobot Corp.,NASDAQ
+IRBT,iRobot Corporation,NASDAQ
+ISRG,"Intuitive Surgical, Inc.",NASDAQ
+ITRI,"Itron, Inc.",NASDAQ
+ITW,Illinois Tool Works,NYSE
+IVC,Invacare,NYSE
+JNJ,Johnson & Johnson,NYSE
+JNPR,Juniper Networks Inc.,NASDAQ
+KEYS,Keysight Technologies,NYSE
+KLAC,KLA-Tencor Corporation,NASDAQ
+KLIC,Kulicke & Soffa Industries Inc.,NASDAQ
+KN,Knowles Corp,NYSE
+KO,Coca Cola,NYSE
+KODK,Eastman Kodak,NASDAQ
+KPTI,Karyopharm Therapeutics Inc,NASDAQ
+KRA,Kraton Performance Polymers Inc.,NYSE
+LASR,"nLIGHT, Inc.",NASDAQ
+LEA,Lear Corporation,NYSE
+LFUS,Littelfuse Inc.,NASDAQ
+LIFE,aTyr Pharma Inc,NASDAQ
+LII,Lennox International Inc.,NYSE
+LLY,Eli Lilly & Co.,NYSE
+LMT,Lockheed Martin Corporation,NYSE
+LNN,Lindsay Corporation,NYSE
+LRCX,Lam Research Corporation,NASDAQ
+LSCC,Lattice Semiconductor Corporation,NASDAQ
+LSI,"Life Storage, Inc.",NYSE
+LUMN,Lumen Technologies,NYSE
+LYTS,"LSI Industries, Inc.",NASDAQ
+MA,Mastercard Incorporated,NYSE
+MAS,Masco Corp.,NYSE
+MAT,Mattel Inc.,NASDAQ
+MCHP,Microchip Technology Inc.,NASDAQ
+MDT,"Medtronic, Inc.",NYSE
+MEI,Methode Electronics Inc.,NYSE
+MEIP,"MEI Pharma, Inc.",NASDAQ
+META,"Meta Platforms, Inc.",NASDAQ
+MHK,Mohawk Industries Inc.,NYSE
+MIDD,Middleby Corp.,NASDAQ
+MKSI,MKS Instruments Inc.,NASDAQ
+MLHR,Herman Miller Inc.,NASDAQ
+MMM,3M Corporation,NYSE
+MNKD,MannKind Corporation,NASDAQ
+MOD,Modine Manufacturing Co.,NYSE
+MORN,Morningstar Inc.,NASDAQ
+MPWR,"Monolithic Power Systems, Inc.",NASDAQ
+MRK,Merck & Co. Inc.,NYSE
+MRVL,Marvell Technology Group Ltd.,NASDAQ
+MSFT,Microsoft Corporation,NASDAQ
+MSI,"Motorola Solutions, Inc.",NYSE
+MTOR,"Meritor, Inc.",NYSE
+MU,Micron Technology Inc.,NYSE
+MXIM,Maxim Integrated Products Inc.,NASDAQ
+MXL,"MaxLinear, Inc.",NYSE
+NATI,National Instruments Corp.,NASDAQ
+NDSN,Nordson Corporation,NASDAQ
+NEM,Newmont Mining,NYSE
+NKE,NIKE Inc.,NYSE
+NLSN,Nielsen NV,NYSE
+NOC,Northrop Grumman Corp.,NYSE
+NOV,"National Oilwell Varco, Inc.",NYSE
+NTAP,"NetApp, Inc.",NASDAQ
+NTCT,"NetScout Systems, Inc.",NASDAQ
+NTGR,Netgear Inc.,NASDAQ
+NUAN,Nuance Communications,NASDAQ
+NUE,Nucor Corporation,NYSE
+NVDA,NVIDIA Corporation,NASDAQ
+NXPI,NXP Semiconductors N.V.,NASDAQ
+O,Realty Income Corp.,NYSE
+OESX,"Orion Energy Systems, Inc.",NASDAQ
+ON,ON Semiconductor,NASDAQ
+ORA,Ormat Technologies Inc.,NYSE
+ORCL,Oracle Corporation,NYSE
+OSK,Oshkosh Corporation,NYSE
+OVTI,OmniVision Technologies Inc.,NASDAQ
+PACB,Pacific Biosciences of California,NASDAQ
+PCAR,PACCAR Inc.,NASDAQ
+PDFS,PDF Solutions Inc.,NASDAQ
+PEP,"Pepsico, Inc.",NYSE
+PFE,Pfizer Inc.,NYSE
+PH,Parker Hannifin Corporation,NYSE
+PII,Polaris Inc.,NYSE
+PLUG,Plug Power Inc.,NASDAQ
+POR,Portland General Electric Company,NYSE
+PRLB,Protolabs,NYSE
+PSTG,Pure Storage,NYSE
+PSX,Phillips 66,NYSE
+PTCT,PTC Therapeutics Inc,NASDAQ
+PX,P10,NYSE
+QCOM,Qualcomm Incorporated,NASDAQ
+QRVO,"Qorvo, Inc",NASDAQ
+RAX,"Rackspace Hosting, Inc.",NYSE
+RBBN,Ribbon Communications Inc.,NASDAQ
+REGI,Renewable Energy Group,NASDAQ
+REGN,Regeneron Pharmaceuticals Inc.,NASDAQ
+RHT,Red Hat Inc.,NYSE
+RIGL,Rigel Pharmaceuticals Inc.,NASDAQ
+RMBS,Rambus Inc.,NASDAQ
+RRX,Regal Rexnord Corporation,NYSE
+RUN,Sunrun Inc.,NASDAQ
+RVNC,Revance Therapeutics,NASDAQ
+SANM,Sanmina-SCI Corp.,NASDAQ
+SCL,Stepan Company,NYSE
+SEDG,SolarEdge,NASDAQ
+SGEN,Seattle Genetics,NASDAQ
+SLAB,Silicon Laboratories Inc.,NASDAQ
+SLB,Schlumberger Limited,NYSE
+SMTC,Semtech Corp.,NASDAQ
+SNAP,Snap Inc.,NYSE
+SNPS,Synopsys,NASDAQ
+SO,Southern Company,NYSE
+SONO,Sonos Inc,NASDAQ
+SPB,"Spectrum Brands, Inc.",NYSE
+SPLK,Splunk Inc,NASDAQ
+SPR,Spirit AeroSystems Holdings Inc,NYSE
+SPWR,SunPower Corporation,NASDAQ
+SPXC,SPX Corporation,NYSE
+SQ,"Block, Inc. ",NYSE
+SRI,"Stoneridge, Inc.",NYSE
+SRPT,Sarepta Therapeutics,NASDAQ
+SSYS,Stratasys Inc.,NASDAQ
+STX,Seagate Technology PLC,NASDAQ
+SWK,Stanley Black & Decker Inc.,NYSE
+SWKS,Skyworks Solutions Inc.,NASDAQ
+SYK,Stryker Corporation,NYSE
+TDC,Teradata Corporation,NYSE
+TEL,TE Connectivity Ltd.,NYSE
+TER,Teradyne Inc.,NASDAQ
+TEX,Terex Corporation,NYSE
+THRM,Gentherm Inc,NASDAQ
+TKR,The Timken Company,NYSE
+TMO,Thermo Fisher Scientific Inc.,NYSE
+TMUS,T-Mobile,NASDAQ
+TNC,Tennant Company,NYSE
+TRMB,Trimble Inc.,NASDAQ
+TRN,Trinity Industries Inc.,NYSE
+TSLA,"Tesla, Inc.",NASDAQ
+TT,Trane Technologies plc,NYSE
+TTC,The Toro Company,NYSE
+TTEK,"Tetra Tech, Inc.",NASDAQ
+TWLO,Twilio,NYSE
+TXN,Texas Instruments Inc.,NASDAQ
+TXT,Textron Inc.,NYSE
+UIS,Unisys Corporation,NYSE
+UTHR,United Therapeutics Corporation,NASDAQ
+UTX,United Technologies Corporation,NYSE
+VAL,Valaris plc,NYSE
+VC,Visteon Corp,NYSE
+VIAV,Viavi Solutions Inc.,NASDAQ
+VMI,Valmont Industries Inc,NYSE
+VMW,"VMware, Inc.",NYSE
+VRTX,Vertex Pharmaceuticals Inc.,NASDAQ
+VSAT,ViaSat Inc.,NASDAQ
+WAB,Westinghouse Air Brake Technologies Corporation,NYSE
+WAT,Waters Corporation,NYSE
+WDC,"Western Digital Technologies, Inc.",NASDAQ
+WFT,Weatherford International Ltd.,NYSE
+WHR,Whirlpool Corporation,NYSE
+WNC,Wabash National Corporation,NYSE
+WOR,"Worthington Industries, Inc.",NYSE
+WWD,Woodward Inc.,NASDAQ
+WY,Weyerhaeuser Co.,NYSE
+XLNX,Xilinx,NASDAQ
+XOM,Exxon Mobil Corporation,NYSE
+XPER,Xperi Corporation,NASDAQ
+XRX,Xerox Corp,NYSE
+ZTS,Zoetis Inc.,NYSE
