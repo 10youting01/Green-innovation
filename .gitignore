@@ -20,6 +20,8 @@ output_dataset
 gemini_preprocess.ipynb
 csr_embeddings.csv
 preprocess_test_language_tool.ipynb
+green_innovation_predcition/output
+CSR_report_processed_v4_gemini_v3_gpt_labeling
 
 # 忽略 Jupyter Notebook 的暫存檔
 *.ipynb_checkpoints/
